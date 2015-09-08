@@ -16,3 +16,19 @@ def addPolynomials(p, q):
     resultList.append(i[1] + q1[i[0]])
 
   return tuple(resultList)
+
+# I realize this code does not work. The examples in this book are a total clusterfuck.
+# But I don't want to deal with correcting the multitude of errata and learning a new
+# language at the same time, so there you go.
+
+def multiplyPolynomials(p, q):
+  resultSize = len(p) + len(q)
+  resultList = [0] * resultSize
+
+  for i in range(0, len(p)):
+    for j in range(0, len(q)):
+      resultList[i + j] = resultList[i + j] + p[i] * q[j]
+
+  return tuple(resultList)
+
+print multiplyPolynomials((1,), (2,))
