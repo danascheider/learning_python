@@ -1,6 +1,2 @@
 def evenSquares(lst):
-  newList = []
-
-  for value in lst:
-    if value % 2 == 0:
-      newList.append(value ** 2)
+  return [x ** 2 for x in lst if x % 2 == 0]
