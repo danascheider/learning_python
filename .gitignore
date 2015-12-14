@@ -1,1 +1,2 @@
 tdd/superlists/superlists/db.sqlite3
+tdd/**/*.pyc
